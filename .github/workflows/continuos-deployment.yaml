@@ -3,7 +3,7 @@ run-name: Deploy do App
 on: 
   # push: 
     # branches: 
-        # - dev
+        # -- dev
   
     pull_request:
         branches:

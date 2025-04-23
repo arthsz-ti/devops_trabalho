@@ -39,4 +39,4 @@ jobs:
               with: 
                     app-name: arthsz-ti-devops-trabalho
                     publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-                    image: arthsz-ti/devops-trabalho:latest
+                    image: arthszti/devops-trabalho:latest

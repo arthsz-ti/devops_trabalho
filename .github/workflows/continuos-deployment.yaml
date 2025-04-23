@@ -35,7 +35,7 @@ jobs:
                 tags: arthsz-ti/devops-trabalho:latest
                 
             - name: Azure WebApp
-              uses: Azure/webapps-deploy@3.0.1
+              uses: Azure/webapps-deploy@v3.0.1
               with: 
                     app-name: arthsz-ti-devops-trabalho
                     publish-profile: ${{ secrets.PUBLISH_PROFILE }}

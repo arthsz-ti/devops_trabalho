@@ -23,7 +23,8 @@ jobs:
               uses: docker/login-action@v3.4.0
               with:
                 username: ${{ secrets.DOCKER_USER}}
-                password: ${{ secrets.DOCKER_PASSAWORD}}
+                password: ${{ secrets.DOCKER_PASSWORD }}
+
 
             - name: Build and push Dokcer image
               uses: docker/build-push-action@v6.15.0
@@ -37,5 +38,5 @@ jobs:
               uses: Azure/webapps-deploy@3.0.1
               with: 
                     app-name: arthsz-ti-devops-trabalho
-                    publish-profile: $({secrets.PUBLISH_PROFILE})
+                    publish-profile: ${{ secrets.PUBLISH_PROFILE }}
                     image: arthsz-ti/devops-trabalho:latest

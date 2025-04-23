@@ -3,7 +3,7 @@ run-name: Deploy do App
 on: 
   # push: 
     # branches: 
-        # -- dev
+        # - dev
   
     pull_request:
         branches:
@@ -22,7 +22,7 @@ jobs:
             - name: Docker login
               uses: docker/login-action@v3.4.0
               with:
-                username: ${{ secrets.DOCKER_USER}}
+                username: ${{ secrets.DOCKER_USER }}
                 password: ${{ secrets.DOCKER_PASSWORD }}
 
 

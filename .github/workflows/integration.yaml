@@ -3,7 +3,7 @@ run-name: Pipeline de CI
 on: 
   push:
     branches:
-      - main
+      - dev
 jobs:
   build:
     name: Build and analyze
